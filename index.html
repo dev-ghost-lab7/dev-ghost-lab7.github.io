@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ghost System · GL7 Internal Hub</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body { background:#0a0a0f; color:#e5e7eb; font-family: Inter, system-ui, sans-serif; }
+  .gradient-text { background: linear-gradient(135deg, #a78bfa 0%, #c4b5fd 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .card-hover { transition: all .2s ease; }
+  .card-hover:hover { transform: translateY(-2px); border-color:#a78bfa; }
+</style>
+</head>
+<body>
+
+<header class="border-b border-[#27272f] bg-[#0a0a0f]/95 backdrop-blur sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-[#7c3aed] to-[#a78bfa] flex items-center justify-center font-bold text-[#0a0a0f] text-xl">GL7</div>
+      <div>
+        <div class="text-xs text-gray-500 uppercase tracking-widest">Ghost Lab7</div>
+        <div class="font-bold text-xl">Ghost System</div>
+      </div>
+    </div>
+    <a href="https://github.com/ghost-lab7/ghost-system" target="_blank" class="text-sm text-gray-400 hover:text-[#a78bfa] flex items-center gap-2">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.21.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.39 1.23-3.23-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.23 0 4.62-2.81 5.64-5.49 5.94.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+      Repo
+    </a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="max-w-6xl mx-auto px-6 py-20 text-center">
+  <div class="text-xs uppercase tracking-widest text-[#a78bfa] mb-4">Orquestrador interno GL7</div>
+  <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+    O <span class="gradient-text">sistema operacional</span><br>
+    de leads e clientes da GL7.
+  </h1>
+  <p class="text-xl text-gray-400 max-w-2xl mx-auto mb-10">
+    Captura, normaliza, nutre, vende, atende. 5 módulos plug-and-play self-hosted.
+    n8n no centro · markdown como banco · git como histórico.
+  </p>
+  <div class="flex flex-wrap items-center justify-center gap-4">
+    <a href="leads/alessandra-martins/index.html" class="bg-[#a78bfa] text-[#0a0a0f] font-bold px-6 py-3 rounded-lg hover:bg-[#c4b5fd] transition">
+      🎯 Ver Lead Alessandra Martins →
+    </a>
+    <a href="README.md" class="border border-[#27272f] hover:border-[#a78bfa] px-6 py-3 rounded-lg transition">
+      📄 README técnico
+    </a>
+  </div>
+</section>
+
+<!-- LEADS -->
+<section id="leads" class="max-w-6xl mx-auto px-6 py-12 border-t border-[#27272f]">
+  <div class="flex items-end justify-between mb-8">
+    <h2 class="text-3xl font-bold">💬 Leads & CRMs</h2>
+    <span class="text-sm text-gray-500">Discovery → Qualified → Proposal → Won</span>
+  </div>
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <!-- Alessandra (active) -->
+    <a href="leads/alessandra-martins/index.html" class="block bg-gradient-to-br from-[#7c3aed]/20 to-[#1a1a24] border-2 border-[#a78bfa]/50 rounded-xl p-6 card-hover">
+      <div class="flex items-center justify-between mb-3">
+        <span class="text-xs uppercase tracking-widest text-yellow-400">🟡 Discovery</span>
+        <span class="text-xs text-gray-500">2026-05-14</span>
+      </div>
+      <h3 class="text-xl font-bold mb-2">Alessandra Martins</h3>
+      <p class="text-sm text-gray-400 mb-4">Pop-up + Showroom digital · 700 contatos legados · case piloto Módulo 4</p>
+      <div class="flex items-center justify-between text-xs">
+        <span class="text-[#a78bfa]">MEDDPICC 1.5/8</span>
+        <span class="text-gray-500">Carol + Jordan CBO</span>
+      </div>
+    </a>
+
+    <!-- SendPulse Tour card -->
+    <a href="screenshots/2026-05-14_sendpulse-tour/index.html" class="block bg-[#1a1a24] border border-[#27272f] rounded-xl p-6 card-hover">
+      <div class="flex items-center justify-between mb-3">
+        <span class="text-xs uppercase tracking-widest text-blue-400">📸 Tour</span>
+        <span class="text-xs text-gray-500">2026-05-14</span>
+      </div>
+      <h3 class="text-xl font-bold mb-2">SendPulse Tour</h3>
+      <p class="text-sm text-gray-400 mb-4">4 prints visuais da infra atual GL7 · email · listas · automações · CRM ITA</p>
+      <div class="flex items-center justify-between text-xs">
+        <span class="text-blue-400">→ ver tour</span>
+        <span class="text-gray-500">prova social pra Carol</span>
+      </div>
+    </a>
+
+    <!-- placeholder cards futuros -->
+    <div class="bg-[#1a1a24]/50 border border-dashed border-[#27272f] rounded-xl p-6 flex items-center justify-center text-center min-h-[180px]">
+      <div>
+        <div class="text-4xl text-gray-700 mb-2">+</div>
+        <div class="text-xs text-gray-600">Próximo lead<br>(adicionar em <code>leads/</code>)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ARQUITETURA -->
+<section id="arquitetura" class="max-w-6xl mx-auto px-6 py-12 border-t border-[#27272f]">
+  <h2 class="text-3xl font-bold mb-8">🏗️ Os 5 módulos</h2>
+  <div class="grid md:grid-cols-5 gap-3">
+    <div class="bg-[#1a1a24] border border-[#27272f] rounded-lg p-4 text-center card-hover">
+      <div class="text-2xl mb-2">📥</div>
+      <div class="font-bold text-sm">1. CAPTURE</div>
+      <div class="text-xs text-gray-500 mt-1">Form → webhook → n8n</div>
+    </div>
+    <div class="bg-[#1a1a24] border border-[#27272f] rounded-lg p-4 text-center card-hover">
+      <div class="text-2xl mb-2">🧹</div>
+      <div class="font-bold text-sm">2. NORMALIZE</div>
+      <div class="text-xs text-gray-500 mt-1">n8n + Twenty + SP</div>
+    </div>
+    <div class="bg-[#1a1a24] border border-[#27272f] rounded-lg p-4 text-center card-hover">
+      <div class="text-2xl mb-2">💌</div>
+      <div class="font-bold text-sm">3. NURTURE</div>
+      <div class="text-xs text-gray-500 mt-1">SP email + Evo WA</div>
+    </div>
+    <div class="bg-gradient-to-br from-[#7c3aed]/20 to-[#1a1a24] border-2 border-[#a78bfa] rounded-lg p-4 text-center card-hover">
+      <div class="text-2xl mb-2">🤖</div>
+      <div class="font-bold text-sm">4. SELL</div>
+      <div class="text-xs text-[#a78bfa] mt-1">Bot pre-qualify 🚧</div>
+    </div>
+    <div class="bg-[#1a1a24] border border-[#27272f] rounded-lg p-4 text-center card-hover">
+      <div class="text-2xl mb-2">💬</div>
+      <div class="font-bold text-sm">5. ATEND</div>
+      <div class="text-xs text-gray-500 mt-1">Chatwoot multi-op</div>
+    </div>
+  </div>
+  <p class="text-center text-gray-500 text-sm mt-6">
+    Detalhamento completo em <a href="leads/alessandra-martins/ARCHITECTURE-5-MODULOS.md" class="text-[#a78bfa] hover:underline">ARCHITECTURE-5-MODULOS.md</a>
+  </p>
+</section>
+
+<!-- ESTRUTURA REPO -->
+<section class="max-w-6xl mx-auto px-6 py-12 border-t border-[#27272f]">
+  <h2 class="text-3xl font-bold mb-8">📁 Estrutura do repo</h2>
+  <div class="bg-[#1a1a24] border border-[#27272f] rounded-xl p-6 font-mono text-sm overflow-x-auto">
+<pre class="text-gray-300">ghost-system/
+├── <span class="text-[#a78bfa]">leads/</span>                                ← <span class="text-gray-500">prospects + CRM hub</span>
+│   └── <span class="text-[#a78bfa]">alessandra-martins/</span>             ← <span class="text-gray-500">lead atual em discovery</span>
+│       ├── README.md
+│       ├── MEDDPICC.md
+│       ├── PROPOSAL-DRAFT.md
+│       ├── ARCHITECTURE-5-MODULOS.md
+│       └── index.html                   ← <span class="text-[#a78bfa]">dashboard navegável</span>
+│
+├── <span class="text-[#a78bfa]">screenshots/</span>                         ← <span class="text-gray-500">prints de referência</span>
+│   └── 2026-05-14_sendpulse-tour/
+│       └── README.md                    ← <span class="text-gray-500">descrição dos 4 prints</span>
+│
+├── workflows-n8n/                       ← workflows exportados (.json)
+├── helpers-vps/                         ← helpers Python VPS
+├── tests/                               ← pytest stdlib
+├── cockpit-render.py                    ← regenera cockpit Kanban
+├── lead-schema-validate.py              ← valida frontmatter leads
+├── sendpulse-sync.py                    ← sync MD ↔ SP
+├── traffic7-bridge.py                   ← bridge traffic7 KPIs
+├── README.md                            ← README técnico
+└── index.html                           ← <span class="text-[#a78bfa]">este dashboard</span></pre>
+  </div>
+</section>
+
+<footer class="border-t border-[#27272f] mt-16 py-8">
+  <div class="max-w-6xl mx-auto px-6 text-center text-sm text-gray-500">
+    <div class="mb-2">Ghost Lab7 · Ghost System v0.1 · 2026</div>
+    <div><a href="https://github.com/ghost-lab7/ghost-system" class="text-[#a78bfa] hover:underline">github.com/ghost-lab7/ghost-system</a> · privado · internal use only</div>
+  </div>
+</footer>
+
+</body>
+</html>
